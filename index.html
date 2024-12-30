@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Task Management System</h1>
+
+       
+        <div class="form-container">
+            <input type="text" id="task-title" placeholder="Enter task title" />
+            <select id="task-status">
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <input type="number" id="task-priority" placeholder="Priority (1-5)" min="1" max="5" />
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <h2>All Tasks</h2>
+        <div id="task-list"></div>
+
+        <h2>Filtered Tasks</h2>
+        <button id="filter-pending">Show Pending Tasks</button>
+        <button id="filter-completed">Show Completed Tasks</button>
+
+        <h2>High Priority Task</h2>
+        <div id="high-priority"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
